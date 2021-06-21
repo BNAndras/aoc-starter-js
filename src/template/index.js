@@ -1,17 +1,18 @@
 const { test, readInput } = require("../utils")
 
-const prepareInput = (rawInput) => rawInput
+const prepareInput = rawInput => rawInput
 
 const input = prepareInput(readInput())
 
-const goA = (input) => {
+const runPartOne = input => {
   return
 }
 
-const goB = (input) => {
+const runPartTwo = input => {
   return
 }
 
+const splitInput = input => input.split(/\r?\n/)
 /* Tests */
 
 // test(result, expected)
@@ -19,9 +20,9 @@ const goB = (input) => {
 /* Results */
 
 console.time("Time")
-const resultA = goA(input)
-const resultB = goB(input)
+const resultPartOne = runPartOne(input)
+const resultPartTwo = runPartTwo(input)
 console.timeEnd("Time")
 
-console.log("Solution to part 1:", resultA)
-console.log("Solution to part 2:", resultB)
+console.log("Solution to part 1:", resultPartOne)
+console.log("Solution to part 2:", resultPartTwo)
